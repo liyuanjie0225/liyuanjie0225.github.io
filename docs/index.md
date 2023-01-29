@@ -1,8 +1,8 @@
 ---
 home: true
 title: 首页
-heroText: 银河水滴组件库
-tagline: 🚀银河水滴组件库
+heroText: 组件库
+tagline: 🚀组件库
 bannerBg: none
 heroImage: /images/watrix.png
 actionText: 快速上手 →

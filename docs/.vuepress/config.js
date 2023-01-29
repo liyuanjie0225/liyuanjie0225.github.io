@@ -8,7 +8,7 @@ const docsLoader = require.resolve('./plugins/docsLoader.js')
 
 module.exports = {
   theme: 'vdoing',
-  title: "银河水滴组件库",
+  title: "组件库",
   base: '/',
   head,
   locales: {
