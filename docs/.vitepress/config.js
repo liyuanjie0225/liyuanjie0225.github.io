@@ -1,7 +1,7 @@
 export default {
   title: "kittyui", //站点标题
   description: "一个vue3组件库", //mate标签description，多用于搜索引擎抓取摘要
-  base: '/', //  部署时的路径 默认 /  可以使用二级地址 /base/
+  base:'/docs/',
   themeConfig: {
     siteTitle: "Kitty",
     logo: "/logo.png",
