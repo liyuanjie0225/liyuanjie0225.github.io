@@ -1,0 +1,83 @@
+/* 分页样式 */
+
+// 分页居中
+.ant-pagination {
+  width: 100%;
+  text-align: center;
+}
+
+// 分页字体色
+.ant-pagination,
+.ant-pagination-item,
+.ant-pagination-item a,
+.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis,
+.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis,
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  color: var(--primary-text-color);
+  background-color: transparent;
+  border: none;
+}
+
+.ant-pagination-item {
+  margin: 5px !important;
+}
+
+// 分页禁止字体色
+.ant-pagination-disabled a,
+.ant-pagination-disabled:hover a,
+.ant-pagination-disabled:focus a,
+.ant-pagination-disabled .ant-pagination-item-link,
+.ant-pagination-disabled:hover .ant-pagination-item-link,
+.ant-pagination-disabled:focus .ant-pagination-item-link {
+  color: var(--secondary-text-color);
+  opacity: 0.4;
+}
+
+// 快速跳转的输入框颜色
+.ant-pagination-options-quick-jumper input,
+.ant-pagination-simple-pager input {
+  background-color: transparent !important;
+  border: 1px solid var(--light-border-color) !important;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+// 下拉框和输入框大小
+.ant-select-sm .ant-select-selection--single,
+.ant-pagination.mini .ant-pagination-options-quick-jumper input {
+  height: var(--small-form-component-height);
+  line-height: calc(var(--small-form-component-height) - 2px);
+}
+
+.ant-select-sm .ant-select-selection__rendered {
+  line-height: calc(var(--small-form-component-height) - 2px);
+}
+
+.theme-dark {
+  .ant-pagination-item-active {
+    border-color: transparent;
+
+    a,
+    .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-link-icon,
+    .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.theme-light {
+  .ant-pagination-item {
+    background-color: var(--light-text-color) !important;
+    border-color: var(--light-text-color) !important;
+  }
+
+  .ant-pagination-item-active {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+
+    a {
+      color: var(--light-text-color);
+    }
+  }
+}

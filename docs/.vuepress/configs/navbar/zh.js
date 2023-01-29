@@ -1,5 +1,4 @@
-import { version } from '../meta.js'
-export const navbarZh = [
+const navbarZh = [
   {
     text: '指南',
     link: '/guide/'
@@ -12,7 +11,14 @@ export const navbarZh = [
     text: '业务组件',
     link: '/businessComponents/'
   },
-  // {
-  //   text: `v${version}`
-  // }
+  {
+    text: '规划',
+    link: '/plan/'
+  },
+  {
+    text: '参考',
+    link: '/reference/'
+  }
 ]
+
+module.exports = navbarZh

@@ -1,3 +1,10 @@
-export * from './head.js'
-export * from './navbar/index.js'
-export * from './sidebar/index.js'
+const { head } = require('./head.js')
+const { navbarZh } = require('./navbar/index.js')
+const { sidebarZh } = require('./sidebar/index.js')
+
+
+module.exports = {
+  head,
+  navbarZh,
+  sidebarZh
+}

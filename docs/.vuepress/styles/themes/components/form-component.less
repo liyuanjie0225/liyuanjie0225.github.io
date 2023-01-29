@@ -1,0 +1,244 @@
+/* 表单组件样式重置 */
+
+
+/* 通用样式 */
+
+// placeholder颜色
+input::placeholder,
+.ant-select-selection__placeholder,
+.ant-select-search__field__placeholder {
+  color: var(--disabled-input-text-color) !important;
+}
+
+input {
+  background-color: transparent;
+}
+
+.ant-input-sm {
+  height: var(--small-form-component-height);
+  line-height: calc(var(--small-form-component-height) - 2px);
+}
+
+.ant-input-search-icon:hover {
+  color: inherit;
+}
+
+// 默认颜色
+.ant-input,
+.ant-input-number,
+.ant-select-selection,
+.ant-radio .ant-radio-inner,
+.ant-checkbox .ant-checkbox-inner,
+.ant-tree-checkbox .ant-tree-checkbox-inner,
+.ant-select-tree-checkbox .ant-select-tree-checkbox-inner {
+  background-color: transparent;
+  border-color: var(--light-border-color);
+  color: var(--primary-text-color);
+}
+
+// 悬停颜色
+.ant-input:hover,
+.ant-input-number:hover,
+.ant-select-selection:hover,
+.ant-radio:hover .ant-radio-inner,
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner,
+.ant-checkbox-input:focus+.ant-checkbox-inner,
+.ant-checkbox:hover::after,
+.ant-checkbox-wrapper:hover .ant-checkbox::after,
+.ant-tree-checkbox:hover .ant-tree-checkbox-inner,
+.ant-select-tree-checkbox:hover .ant-select-tree-checkbox-inner {
+  border-color: var(--primary-border-color) !important;
+}
+
+// 禁用颜色
+.ant-input[disabled],
+.ant-select-disabled .ant-select-selection,
+.ant-radio.ant-radio-disabled .ant-radio-inner,
+.ant-checkbox.ant-checkbox-disabled .ant-checkbox-inner,
+.ant-tree-checkbox.ant-tree-checkbox-disabled .ant-tree-checkbox-inner,
+.ant-select-tree-checkbox.ant-select-tree-checkbox-disabled .ant-select-tree-checkbox-inner {
+  background-color: var(--disabled-input-background-color);
+  border-color: var(--light-border-color) !important;
+  color: var(--disabled-input-text-color);
+}
+
+// 禁用悬停颜色
+.ant-input[disabled]:hover,
+.ant-input-disabled:hover,
+.ant-select-disabled .ant-select-selection:hover,
+.ant-select-disabled .ant-select-selection:focus,
+.ant-select-disabled .ant-select-selection:active,
+.ant-radio.ant-radio-disabled:hover .ant-radio-inner,
+.ant-checkbox.ant-checkbox-disabled:hover .ant-checkbox-inner,
+.ant-tree-checkbox.ant-tree-checkbox-disabled:hover .ant-tree-checkbox-inner,
+.ant-select-tree-checkbox.ant-select-tree-checkbox-disabled:hover .ant-select-tree-checkbox-inner {
+  border-color: var(--light-border-color) !important;
+}
+
+// 输入框前后图标色
+.ant-input-affix-wrapper .ant-input-prefix,
+.ant-input-affix-wrapper .ant-input-suffix,
+.ant-input+.anticon,
+.ant-input+.anticon+.anticon {
+  color: var(--primary-text-color);
+}
+
+// 清空icon
+.ant-input-affix-wrapper .ant-input-prefix .ant-input-clear-icon,
+.ant-input-affix-wrapper .ant-input-suffix .ant-input-clear-icon,
+.ant-input-clear-icon,
+.anticon.ant-calendar-picker-clear {
+  color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+// select search颜色
+.ant-select-tree-dropdown .ant-select-dropdown-search .ant-select-search__field {
+  border-color: var(--light-border-color);
+}
+
+// select清除按钮
+.ant-select-selection__clear {
+  border-radius: 50%;
+}
+
+// 输入框清除按钮
+.ant-input-affix-wrapper .ant-input-prefix .ant-input-clear-icon:hover,
+.ant-input-affix-wrapper .ant-input-suffix .ant-input-clear-icon:hover,
+.ant-input-clear-icon:hover {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+
+/* checkbox */
+// 禁用时勾子颜色
+.ant-checkbox-disabled .ant-checkbox-inner,
+.ant-tree-checkbox-disabled .ant-tree-checkbox-inner {
+  &:after {
+    border-color: var(--disabled-input-text-color) !important;
+  }
+}
+
+.ant-checkbox-disabled+span {
+  color: var(--disabled-input-text-color);
+}
+
+// checkbox选中颜色
+.ant-checkbox-checked .ant-checkbox-inner,
+.ant-tree-checkbox-checked .ant-tree-checkbox-inner,
+.ant-select-tree-checkbox-checked .ant-select-tree-checkbox-inner {
+  background-color: var(--primary-border-color);
+  border-color: var(--primary-border-color) !important;
+}
+
+.ant-checkbox-inner::after {
+  transition: none !important;
+}
+
+// 未全选颜色
+.ant-checkbox-indeterminate .ant-checkbox-inner,
+.ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner,
+.ant-select-tree-checkbox-indeterminate .ant-select-tree-checkbox-inner {
+  background-color: var(--opacity-light-primary-color);
+  border-color: var(--primary-border-color) !important;
+}
+
+.ant-checkbox-indeterminate .ant-checkbox-inner::after,
+.ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner::after,
+.ant-select-tree-checkbox-indeterminate .ant-select-tree-checkbox-inner::after {
+  background-color: var(--primary-border-color);
+}
+
+// radio里圆圈颜色
+.ant-radio-inner::after {
+  background-color: var(--primary-border-color);
+}
+
+// radio选中颜色
+.ant-radio-checked .ant-radio-inner {
+  border-color: var(--primary-border-color)
+}
+
+
+
+
+
+
+
+
+
+
+// 待优化
+.ant-select-search__field {
+  background-color: var(--drawer-background-color) !important;
+}
+
+.ant-select-dropdown-menu-item,.ant-cascader-menu{
+  color: var(--primary-text-color);
+}
+.ant-cascader-menu .ant-cascader-menu-item-expand-icon{
+  color: var(--primary-text-color);
+}
+
+.ant-select-dropdown-menu-item-selected {
+  color: var(--primary-color) !important;
+  background-color: var(--dropdown-selected-background-color) !important;
+}
+
+.ant-select-search .ant-select-search__field__wrap .ant-select-search__field {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.ant-select-dropdown-menu-item-active,.ant-cascader-menu-item-active {
+  color: var(--primary-color);
+  background-color: var(--dropdown-active-background-color) !important;
+}
+
+.ant-select-dropdown-menu-item-disabled,
+.ant-select-dropdown-menu-item-disabled:hover {
+  color: unset;
+  opacity: 0.5;
+}
+
+.ant-select-tree-title {
+  color: var(--primary-text-color);
+}
+
+.ant-select-selection__choice {
+  background: var(--light-background-color) !important;
+  color: var(--primary-text-color) !important;
+  border: none;
+}
+
+// 多选
+.ant-select-selection--multiple .ant-select-selection__choice {
+  border-color: var(--disabled-input-background-color)!important;
+  background-color:  var(--disabled-input-background-color)!important;
+}
+
+// 关闭按钮
+.ant-select-selection--multiple .ant-select-selection__choice__remove {
+  color: var(--primary-text-color);
+}
+
+.ant-select-selection--multiple .ant-select-selection__choice__remove:hover {
+  color: var(--primary-text-color);
+}
+
+.ant-radio-disabled+span {
+  color: var(--primary-text-color);
+}
+
+// Number Input
+.ant-input-number-handler-wrap {
+  background-color: transparent;
+  border-color: var(--divide-line-color);
+
+  .ant-input-number-handler {
+    color: unset;
+    border-color: var(--divide-line-color);
+  }
+}

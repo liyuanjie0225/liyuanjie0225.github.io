@@ -1,0 +1,167 @@
+.theme-mode-dark {
+  /**
+   基础变量
+  **/
+
+  // 主题色
+  --primary-color: rgba(0, 191, 255, 0.85);
+  // 透明主题色
+  --opacity-primary-color: rgba(0, 163, 217, 0.5);
+  // 第二主题色
+  --light-primary-color: rgba(0, 163, 217, 0.8);
+  // 透明第二主题色
+  --opacity-light-primary-color: rgba(0, 191, 255, 0.25);
+
+  // 成功色
+  --success-color: #009D8A;
+  // 警告色
+  --warning-color: #E6A23C;
+  // 危险色
+  --danger-color: #D42131;
+  // 第二危险色
+  --light-danger-color: #FF4D4F;
+
+  // 主题背景色
+  --primary-background-color: #0C1957;
+  // 第二背景色
+  --light-background-color: #0F246F;
+  // 第三背景色
+  --light-background-color2: #16317D;
+
+  // 主题字体色
+  --primary-text-color: rgba(255, 255, 255, 0.85);
+  // 第二字体色
+  --secondary-text-color: #B2BBC8;
+  // 第三字体色
+  --third-text-color: #B2BBC8;
+  // 浅字体色
+  --light-text-color: #FFFFFF;
+  // table Header文字颜色
+  --table-header-text: #FFFFFF;
+
+  // 主题边框色
+  --primary-border-color: #00BFFF;
+  // 第二边框色
+  --light-border-color: rgba(255, 255, 255, 0.25);
+
+  /**
+    具体变量
+  **/
+
+  // 顶部导航
+  --header-background-color: var(--light-background-color);
+  --header-text-color: #FFFFFF;
+  --header-active-text-color: #00EBFF;
+  --header-active-background-color: #00EBFF;
+  --header-active-secondary-text-color: #00EBFF;
+
+  // 表格
+  --table-header-baground-color: #16317D;
+  --table-primary-baground-color: #0F246F;
+  --table-light-background-color: #182C76;
+  --table-hover-background-color: #1D3D8D;
+  --table-text-color: var(--primary-text-color);
+  --table-select-background-color: #1D3D8D;
+
+  // 普通按钮
+  --button-background-color: transparent;
+  --button-text-color: var(--light-text-color);
+  --button-border-color: var(--light-border-color);
+  // 幽灵按钮
+  --ghost-button-background-color: var(--opacity-light-primary-color);
+  --ghost-button-text-color: var(--light-text-color);
+  --ghost-button-border-color: var(--primary-border-color);
+  // 主题按钮
+  --primary-button-background-color: var(--primary-color);
+  --primary-button-text-color: var(--light-text-color);
+  --primary-button-border-color: var(--primary-color);
+  // 危险按钮
+  --danger-button-background-color: var(--light-danger-color);
+  --danger-button-text-color: var(--light-text-color);
+  --danger-button-border-color: var(--light-danger-color);
+
+  // 普通按钮悬停
+  --button-hover-background-color: transparent;
+  --button-hover-text-color: var(--light-text-color);
+  --button-hover-border-color: var(--primary-border-color);
+  // 幽灵按钮悬停
+  --ghost-button-hover-background-color: var(--opacity-primary-color);
+  --ghost-button-hover-text-color: var(--light-text-color);
+  --ghost-button-hover-border-color: var(--primary-border-color);
+  // 主题按钮悬停
+  --primary-button-hover-background-color: var(--light-primary-color);
+  --primary-button-hover-text-color: var(--light-text-color);
+  --primary-button-hover-border-color: var(--light-primary-color);
+  // 危险按钮悬停
+  --danger-button-hover-background-color: var(--danger-color);
+  --danger-button-hover-text-color: var(--light-text-color);
+  --danger-button-hover-border-color: var(--danger-color);
+
+  // 禁用按钮
+  --button-disbaled-background-color: var(--primary-background-color);
+  --button-disbaled-text-color: var(--secondary-text-color);
+  --button-disbaled-border-color: var(--light-border-color);
+
+  // 输入框禁用背景
+  --disabled-input-background-color: rgba(255, 255, 255, 0.11);
+  --disabled-input-text-color: rgba(255, 255, 255, 0.35);
+
+  // 抽屉背景色
+  --drawer-header-background-color: #19307B;
+  --drawer-background-color: #111D63;
+
+  // 侧边栏颜色
+  --sidebar-background-color: #1C307A;
+
+  // 分割线颜色
+  --divide-line-color: #3D4973;
+
+  // 选择框高亮色
+  --dropdown-selected-background-color: rgba(45, 63, 128, 1);
+  --dropdown-selected-text-color: var(--primary-text-color);
+  // 选择框悬停色
+  --dropdown-active-background-color: rgba(29, 48, 119, 1);
+  --dropdown-active-text-color: var(--primary-color);
+
+  // 提示框边框色
+  --message-border-color: #505F96;
+  --message-shadow-color: rgba(255, 255, 255, 0.15);
+
+  // 进度条颜色
+  --progress-background-color: rgba(0, 191, 255, 0.2);
+  --progress-color: var(--primary-border-color);
+
+  // tree
+  --tree-hover-background-color: rgba(0, 213, 255, 0.15);
+
+  // 搜索块背景色
+  --search-wrapper-bg: #0F246F;
+
+  // 秀龙（待优化）
+
+  //v-step 步骤条
+  --v-steps-item-icon-background: #FFD591;
+  --v-steps-item-icon-title: #FFD591;
+
+  //alignment
+  --alignment-left-gb: #0F246F;
+  --alignment-left-empty-container: rgba(0, 191, 255, 0.05);
+  --alignment-left-empty-border-color: rgba(0, 191, 255, 0.5);
+  --alignment-left-empty-color: rgba(255, 255, 255, 0.25);
+  --alignment-left-card-gb: #1C307A;
+  --alignment-target-container: #0F246F;
+  --alignment-search-gb: #0F246F;
+  //时间范围选择按钮的颜色
+  --time-unselect-button-bg: rgba(255, 255, 255, 0.15);
+  --time-unselect-button-color: rgba(255, 255, 255, 0.85);
+  --time-unselect-button-border-color: rgba(255, 255, 255, 0.3);
+
+  //left card
+  --card-item-iconfont-color: #D8D8D8;
+
+  //sort-button
+  --sort-button-icon: #7482B3;
+  --camera-select-color: #29D1FF;
+  --feature-select-color: #FFD591;
+  --card-item-select-background: transparent;
+}

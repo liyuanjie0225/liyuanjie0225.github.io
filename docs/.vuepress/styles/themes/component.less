@@ -1,0 +1,379 @@
+/*
+  待优化代码，优化完删除
+*/
+
+// 大背景
+.ant-layout-content {
+  background: var(--primary-background-color);
+  margin: 0;
+}
+
+// 左侧菜单展开背景
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background: var(--light-background-color);
+  box-shadow: none;
+}
+
+
+
+
+
+// 暂无数据颜色
+.ant-empty-normal {
+  color: var(--primary-text-color);
+  // 图标颜色
+  svg > g > g {
+    stroke: var(--primary-text-color);
+  }
+}
+
+
+// 选择框
+.ant-dropdown-menu {
+  color: var(--primary-text-color);
+  background-color: var(--light-background-color);
+}
+
+
+// 悬停效果
+.ant-dropdown-menu-item-active:hover,
+.ant-dropdown-menu-submenu-title:hover,
+.ant-dropdown-menu-item-disabled:hover {
+  color: var(--primary-color);
+  background-color: var(--dropdown-active-background-color) !important;
+}
+
+
+// 统一主题切换时的过渡效果
+#app > section.ant-layout > section.ant-layout {
+  transition: background-color 0.3s;
+
+  .ant-pro-global-header,
+  .ant-layout-footer {
+    transition: background-color 0.3s;
+  }
+
+  .ant-pro-global-header .ant-pro-global-header-index-action i {
+    transition: color 0.3s;
+  }
+}
+
+.ant-menu-submenu-arrow:after {
+  width: 9px !important;
+  transform: rotate(-45deg) translateY(4px) !important;
+}
+
+.ant-menu-submenu-arrow:before {
+  width: 9px !important;
+  transform: rotate(45deg) translateY(-4px) !important;
+}
+
+.ant-menu-submenu-open .ant-menu-submenu-arrow {
+  margin-top: 6px;
+}
+
+.ant-menu-submenu-open .ant-menu-submenu-arrow:before {
+  transform: rotate(-45deg) translateX(4px) !important;
+}
+
+.ant-menu-submenu-open .ant-menu-submenu-arrow:after {
+  transform: rotate(45deg) translateX(-4px) !important;
+}
+
+// 设置tree-select 项目省略号
+.ant-select-tree-node-content-wrapper {
+  vertical-align: top;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ant-pro-sider-menu-sider.fix-sider-bar .ant-menu-root {
+  -ms-overflow-style: none !important;
+  overflow: -moz-scrollbars-none !important;
+
+  &::-webkit-scrollbar {
+    width: 0px !important;
+    min-width: 0;
+  }
+}
+
+
+//设置背景色和字体色
+.ant-card,
+.ant-modal-header,
+.ant-upload.ant-upload-select-picture-card,
+.ant-card-actions,
+.ant-select-dropdown-menu,
+.ant-collapse,
+.ant-collapse-content,
+.ant-collapse-header,
+.user-dropdown-menu-wrapper,
+.ant-switch-loading-icon,
+.ant-switch::after {
+  background: var(--light-background-color);
+  color: var(--primary-text-color);
+}
+
+
+.ant-cascader-menu {
+  background: var(--light-background-color) !important;
+  color: var(--primary-text-color) !important;
+}
+.ant-cascader-picker{
+  background-color: transparent !important;
+  color: var(--primary-text-color) !important;
+}
+.ant-cascader-picker-disabled{
+  background-color: var(--disabled-input-background-color) !important;
+  color: var(--disabled-input-text-color) !important;
+}
+.ant-cascader-picker-clear{
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.25) !important;
+}
+.ant-cascader-picker-clear:hover{
+  color: rgba(0, 0, 0, 0.45) !important;
+}
+.ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled),
+.ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+  color: var(--primary-color);
+  background-color: var(--dropdown-active-background-color) !important;
+}
+.ant-cascader-menu-item:hover{
+  color: var(--primary-color);
+  background-color: var(--dropdown-active-background-color) !important;
+}
+
+.ant-select-tree li .ant-select-tree-node-content-wrapper:hover {
+  background: var(--table-light-background-color);
+}
+
+.ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
+  background: var(--table-hover-background-color);
+}
+
+.ant-form,
+.ant-form-item,
+.ant-input,
+.ant-select,
+.layout .header.dark .user-wrapper .action,
+.ant-modal-title,
+.ant-calendar-range-picker-separator,
+.ant-menu-horizontal > .ant-menu-item > a,
+.ant-card-head,
+.ant-select-arrow,
+.ant-upload,
+.ant-form-item-label label,
+.ant-checkbox-wrapper,
+.ant-radio-wrapper,
+.ant-modal-confirm-body .ant-modal-confirm-title,
+.ant-modal-confirm-body .ant-modal-confirm-content,
+.ant-card-meta-title,
+.ant-card-meta-description,
+.ant-menu-item-disabled,
+.ant-menu-submenu-disabled,
+.ant-message,
+.ant-progress-circle .ant-progress-text,
+.ant-spin-text,
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-item > a,
+.ant-dropdown-menu-submenu-title,
+.ant-dropdown-menu-submenu-title > a {
+  color: var(--primary-text-color);
+}
+
+.ant-spin-dot-item {
+  background-color: var(--primary-text-color) !important;
+}
+
+.ant-message-notice-content {
+  background-color: var(--light-background-color);
+}
+
+.ant-message-success .anticon {
+  color: var(--success-color) !important;
+}
+
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active,
+.ant-menu-submenu-title:hover {
+  color: #51AEFF;
+}
+
+.has-error .ant-input,
+.has-error .ant-input:hover {
+  background-color: var(--light-background-color);
+}
+
+.has-error .ant-input-number,
+.has-error .ant-input-number:hover {
+  background-color: var(--light-background-color);
+}
+
+/* 设置边框 */
+
+.ant-card-bordered,
+.ant-collapse,
+.ant-collapse > .ant-collapse-item,
+.case-item .ant-checkbox-inner,
+.ant-card-body {
+  border: none !important;
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item {
+  border: 1px solid var(--light-border-color);
+}
+
+.ant-modal-header,
+.ant-card-head {
+  border-bottom: 1px solid var(--light-border-color);
+}
+
+.ant-modal-footer,
+.ant-collapse-content,
+.ant-card-actions {
+  border-top: 1px solid var(--light-border-color) !important;
+}
+
+
+.ant-collapse,
+.ant-collapse-content,
+.ant-collapse-header,
+.ant-input-group-addon {
+  background-color: var(--light-background-color) !important;
+  color: var(--primary-text-color) !important;
+  border: none;
+}
+
+
+///* 设置边距 */
+
+.ant-switch {
+  background-color: #535c79;
+}
+
+.ant-switch.ant-switch-checked {
+  background-color: var(--primary-color);
+}
+
+li.ant-select-tree-treenode-disabled > .ant-select-tree-node-content-wrapper,
+li.ant-select-tree-treenode-disabled > .ant-select-tree-node-content-wrapper span,
+li.ant-select-tree-treenode-disabled > span:not(.ant-select-tree-switcher) {
+  color: var(--secondary-text-color);
+}
+
+.ant-popover-inner {
+  // background: var(--light-text-color);
+  background: var(--light-background-color);
+}
+
+
+.ant-select-dropdown,.ant-cascader-menu {
+  background-color: var(--drawer-background-color);
+  border: 1px solid var(--light-border-color) !important;
+  box-shadow: 0 2px 6px 0 rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+.ant-select-dropdown-search {
+  color: var(--primary-text-color);
+  background-color: transparent !important;
+}
+
+.ant-popover-placement-bottom > .ant-popover-content > .ant-popover-arrow,
+.ant-popover-placement-top > .ant-popover-content > .ant-popover-arrow,
+.ant-popover-placement-left > .ant-popover-content > .ant-popover-arrow {
+  border-color: var(--light-background-color);
+}
+
+.ant-popover-inner-content {
+  color: var(--primary-text-color);
+}
+.theme-dark .ant-popover-message-title{
+  color: #FFFFFF;
+}
+// 步骤条
+.theme-dark {
+  .ant-steps-item-finish .ant-steps-item-icon {
+    background: #00BFFF;
+    border: none;
+  }
+
+  .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+    color: #FFFFFF;
+    background: #00BFFF!important;
+  }
+  .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    color: #FFFFFF;
+  }
+  .ant-steps-item-wait .ant-steps-item-icon {
+    background: #646B99;
+  }
+  .ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    color: #646B99;
+  }
+  .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    font-weight: bold;
+    color: #FFFFFF;
+
+  }
+}
+.theme-light {
+  .ant-steps-item-finish .ant-steps-item-icon {
+    background: #567FE2;
+    border: none;
+  }
+
+  .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+    color: #FFFFFF;
+  }
+  .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
+    color: #FFFFFF;
+  }
+  .ant-steps-item-wait .ant-steps-item-icon {
+    background: #B2BBC8;
+    border: none;
+  }
+  .ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    color: #919BA7;
+    font-weight: Bold;
+    opacity: 1;
+  }
+
+  .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    font-weight: bold;
+    color: #003ED6!important;
+  }
+  .ant-steps-item-process .ant-steps-item-icon {
+    background: #003ED6!important;
+    border-color: #003ED6!important;
+  }
+  .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    color: #2C5FDB!important;
+    font-weight: Bold;
+  }
+}
+.ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title:after {
+  background: #003ED6!important;
+}
+
+// 分割线
+.ant-divider {
+  background-color: var(--divide-line-color);
+  &-horizontal.ant-divider-with-text-center {
+    &::before, &::after {
+      border-top: 1px solid var(--divide-line-color);
+    }
+  }
+}
+
+.icon.active,
+.anticon.active {
+  color: var(--primary-color);
+}
+.call-us .call-text{
+  text-align: center;
+}

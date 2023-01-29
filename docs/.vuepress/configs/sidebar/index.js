@@ -1,2 +1,5 @@
-// export * from './en.js'
-export * from './zh.js'
+const sidebarZh = require('./zh.js')
+
+module.exports = {
+  sidebarZh
+}

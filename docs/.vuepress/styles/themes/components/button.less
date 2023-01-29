@@ -1,0 +1,87 @@
+/* 按钮样式重置 */
+
+// 普通按钮
+.ant-btn {
+  border-color: var(--button-border-color) !important;
+  color: var(--button-text-color) !important;
+  background-color: var(--button-background-color) !important;
+  border-radius: 4px;
+}
+
+.ant-btn-sm {
+  height: var(--small-form-component-height);
+  line-height: calc(var(--small-form-component-height) - 2px);
+}
+
+.ant-btn:not(:disabled):hover,
+.ant-btn:not(:disabled):focus {
+  border-color: var(--button-hover-border-color) !important;
+  color: var(--button-hover-text-color) !important;
+  background-color: var(--button-hover-background-color) !important;
+}
+
+// 幽灵按钮
+.ant-btn-background-ghost {
+  border-color: var(--ghost-button-border-color) !important;
+  color: var(--ghost-button-text-color) !important;
+  background-color: var(--ghost-button-background-color) !important;
+}
+
+.ant-btn-background-ghost:not(:disabled):hover,
+.ant-btn-background-ghost:not(:disabled):focus {
+  border-color: var(--ghost-button-hover-border-color) !important;
+  color: var(--ghost-button-hover-text-color) !important;
+  background-color: var(--ghost-button-hover-background-color) !important;
+}
+
+// 主要按钮
+.ant-btn-primary {
+  border-color: var(--primary-button-border-color) !important;
+  color: var(--primary-button-text-color) !important;
+  background-color: var(--primary-button-background-color) !important;
+}
+
+.ant-btn-primary:not(:disabled):hover,
+.ant-btn-primary:not(:disabled):focus {
+  border-color: var(--primary-button-hover-border-color) !important;
+  color: var(--primary-button-hover-text-color) !important;
+  background-color: var(--primary-button-hover-background-color) !important;
+}
+
+// 文字按钮
+.ant-btn-link {
+  border: transparent !important;
+  background-color: transparent;
+}
+
+.ant-btn-link:hover,
+.ant-btn-link:focus {
+  background: transparent !important;
+}
+
+// 按钮禁用状态
+
+/**
+  两个主题的按钮禁用状态不一样，所以分开写
+**/
+.theme-light {
+
+  // 按钮禁用状态
+  .ant-btn[disabled] {
+    border-color: var(--button-disbaled-border-color) !important;
+    color: var(--button-disbaled-text-color) !important;
+    background-color: var(--button-disbaled-background-color) !important;
+  }
+}
+
+.theme-dark {
+  .ant-btn[disabled] {
+    opacity: 0.4;
+  }
+}
+
+// 大按钮样式
+.ant-btn-lg {
+  width: 129px;
+  font-size: 14px;
+}

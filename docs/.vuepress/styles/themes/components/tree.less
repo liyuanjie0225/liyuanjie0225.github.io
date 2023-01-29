@@ -1,0 +1,49 @@
+// 全局字体色
+.ant-tree li .ant-tree-node-content-wrapper {
+  color: var(--primary-text-color);
+}
+
+.ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected,
+.ant-tree li .ant-tree-node-content-wrapper:hover {
+  background-color: var(--tree-hover-background-color);
+}
+
+// tree箭头颜色
+.ant-tree-switcher .anticon path,
+.ant-select-tree-switcher .anticon path {
+  fill: #8d97ba;
+}
+
+li.ant-tree-treenode-disabled > span:not(.ant-tree-switcher),
+li.ant-tree-treenode-disabled > .ant-tree-node-content-wrapper,
+li.ant-tree-treenode-disabled > .ant-tree-node-content-wrapper span {
+  color: var(--secondary-text-color);
+}
+
+// 选中的节点的样式
+.ant-tree-node-selected .ant-tree-title div > span,
+.ant-select-tree-node-selected .ant-select-tree-title {
+  font-weight: bold;
+}
+
+/* 树的级联在深色浅色模式下的样式 */
+.theme-dark {
+  .ant-tree-title .cascade-title,
+  .ant-select-tree-title .cascade-title {
+    color: #69dff0;
+  }
+  .ant-tree-node-selected .ant-tree-title .cascade-title,
+  .ant-select-tree-node-selected .ant-tree-title .cascade-title {
+    color: #00ebff;
+  }
+}
+.theme-light {
+  .ant-tree-title .cascade-title,
+  .ant-select-tree-title .cascade-title {
+    color: #007F70;
+  }
+  .ant-tree-node-selected .ant-tree-title .cascade-title,
+  .ant-select-tree-node-selected .ant-tree-title .cascade-title {
+    color: #007F70;
+  }
+}

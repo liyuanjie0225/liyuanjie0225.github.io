@@ -1,0 +1,40 @@
+// 抽屉背景
+.ant-drawer-header {
+  background-color: var(--drawer-header-background-color);
+  border-color: var(--light-border-color);
+}
+
+.ant-drawer-body {
+  background: var(--drawer-background-color);
+  padding: 0 !important;
+  height: calc(100% - 55px);
+  overflow: hidden;
+
+  // 抽屉滚动内容
+  .drawer-content {
+    height: calc(100vh - 65px - 55px);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .drawer-content.no-footer {
+    height: calc(100vh - 55px);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  // 抽屉底部
+  .drawer-footer {
+    line-height: 64px;
+    border-top: 1px solid var(--divide-line-color);
+    text-align: center;
+  }
+}
+
+// 字体颜色
+.ant-drawer-title,
+.ant-drawer-close,
+.ant-drawer-close:focus,
+.ant-drawer-close:hover {
+  color: var(--primary-text-color);
+}

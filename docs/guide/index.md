@@ -1,4 +1,10 @@
+---
+title: 指南
+date: 2022-09-14 18:41:52
+permalink: /pages/4ac09a/
+---
 # 我是指南
+
 ### 提示及警告
 ::: tip
 我是提示
@@ -18,30 +24,19 @@
 
 ### 代码块
 
-:::: code-group
+<code-group>
+  <code-block title="YARN" active>
+  ```bash
+  yarn install
+  ```
+  </code-block>
 
-
-::: code-group-item YARN
-
-``` ts
-yarn install
-
-```
-
-:::
-
-
-::: code-group-item CNPM
-
-``` ts
-cnpm install
-
-```
-
-:::
-
-
-::::
+  <code-block title="CNPM">
+  ```bash
+  cnpm install
+  ```
+  </code-block>
+</code-group>
 
 ### 代码块行高亮
 
@@ -56,6 +51,3 @@ export default defineUserConfig({
   }),
 })
 ```
-
-### 从文件中读取代码
-@[code](./demo.vue)

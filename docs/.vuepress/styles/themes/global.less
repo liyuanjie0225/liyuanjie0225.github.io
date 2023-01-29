@@ -1,0 +1,112 @@
+/**
+  自定义通用样式
+**/
+
+// 通用的页面布局变量
+//:root {
+//  --min-width: 1650px;
+//  --min-height: 720px;
+//  --top-menu-header-height: 50px;
+//  --left-menu-header-height: 64px;
+//
+//  --global-space: 20px;
+//  --header-filter-height: 56px;
+//
+//  --small-form-component-height: 28px;
+//  --default-form-component-height: 40px;
+//}
+//
+//html {
+//  // 启用字距和连写
+//  text-rendering: optimizeLegibility;
+//  // 字体抗锯齿
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//
+//  // 常规字体颜色
+//  body {
+//    color: var(--primary-text-color);
+//    background-color: var(--primary-background-color);
+//    overflow-y: hidden;
+//
+//    // 隐藏全局滚动条
+//    ::-webkit-scrollbar-thumb {
+//      border-radius: 4px;
+//    }
+//  }
+//}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: var(--light-border-color);
+}
+
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece,
+::-webkit-resizer {
+  background: none;
+}
+
+// 页面定宽高，超出隐藏
+#app {
+  height: 100%;
+  overflow: auto;
+}
+
+// 链接颜色
+a {
+  color: var(--primary-color);
+
+  &.danger {
+    color: var(--light-danger-color) !important;
+  }
+}
+
+a.disabled,
+.anticon.disabled,
+.iconfont.disabled {
+  cursor: not-allowed;
+
+  &,
+  &:hover,
+  &:active {
+    color: var(--disabled-input-text-color) !important;
+  }
+}
+
+// 画布
+canvas {
+  display: block;
+}
+
+// 取消列表默认样式
+ul,
+ol {
+  list-style: none;
+}
+
+// 分割线
+.ant-divider,
+.ant-divider-vertical {
+  height: 28px;
+}
+
+/* 自定义类（页面多次引用） */
+
+// 卡片背景
+.card-background-color {
+  background-color: var(--light-background-color);
+}
+
+// 设置可点击的字体样式和指针
+.cursor {
+  cursor: pointer;
+}

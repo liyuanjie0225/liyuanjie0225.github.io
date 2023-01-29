@@ -1,0 +1,203 @@
+/* 时间日期选择器 */
+
+// 有一条多余的边框
+.ant-calendar-range-right .ant-calendar-time-picker-inner {
+  border: none;
+}
+
+.ant-calendar-picker-input.ant-input-disabled {
+  background-color: var(--disabled-input-background-color);
+
+  input {
+    color: var(--disabled-input-text-color);
+  }
+}
+
+// 清除按钮颜色
+.ant-calendar-picker-clear:hover {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+// 只有暗色主题需要改样式
+.theme-dark {
+
+  // 整体背景色，去掉边框
+  .ant-calendar {
+    background-color: var(--light-background-color);
+    border: none;
+  }
+
+  // v3
+  .ant-picker-range-wrapper, .ant-picker-panel-container {
+    background-color: var(--light-background-color);
+    color: var(--primary-text-color);
+  }
+
+  .ant-calendar-input,
+  .ant-calendar-range .ant-calendar-input,
+  .ant-calendar-range .ant-calendar-time-picker-input {
+    background-color: transparent;
+    color: var(--primary-text-color);
+  }
+
+  .ant-calendar-range-middle {
+    color: var(--primary-text-color);
+  }
+
+  // 字体颜色
+  .ant-calendar-picker-container,
+  .ant-calendar-header .ant-calendar-century-select,
+  .ant-calendar-header .ant-calendar-decade-select,
+  .ant-calendar-header .ant-calendar-year-select,
+  .ant-calendar-header .ant-calendar-month-select,
+  .ant-calendar-time .ant-calendar-day-select,
+  .ant-calendar-date {
+    color: var(--primary-text-color);
+  }
+
+  // v3
+  .ant-picker-container,
+  .ant-picker-header,
+  .ant-picker-header button,
+  .ant-picker-content th,
+  .ant-picker-content td,
+  .ant-picker-time-panel-cell,
+  .ant-picker-time-panel-cell .ant-picker-time-panel-cell-inner,
+  .ant-picker-time-panel-column>li.ant-picker-time-panel-cell .ant-picker-time-panel-cell-inner{
+    color: var(--primary-text-color);
+  }
+
+  // 选中的日期颜色
+  .ant-calendar-range .ant-calendar-selected-start-date .ant-calendar-date,
+  .ant-calendar-range .ant-calendar-selected-end-date .ant-calendar-date {
+    background-color: var(--primary-color);
+  }
+  // v3
+  .ant-picker-time-panel-column>li.ant-picker-time-panel-cell-selected .ant-picker-time-panel-cell-inner,
+  .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+  .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner{
+    background-color: var(--primary-color);
+  }
+
+  // 日期悬停颜色
+  .ant-calendar-date:hover {
+    background-color: var(--primary-color);
+  }
+  // v3
+  .ant-picker-cell:hover:not(.ant-picker-cell-in-view) .ant-picker-cell-inner, .ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end) .ant-picker-cell-inner {
+    background-color: var(--primary-color);
+  }
+
+  // 选中的日期范围内区域颜色
+  .ant-calendar-range .ant-calendar-in-range-cell::before {
+    background-color: var(--opacity-light-primary-color);
+  }
+  //v3
+  .ant-picker-cell-in-view.ant-picker-cell-in-range:before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single):before,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single):before{
+    background-color: var(--opacity-light-primary-color);
+  }
+
+  // 不可选的日期的颜色
+  .ant-calendar-disabled-cell .ant-calendar-date {
+    background-color: var(--light-background-color);
+    color: var(--secondary-text-color);
+    opacity: 0.4;
+  }
+
+  //v3
+  .ant-picker-cell-disabled .ant-picker-cell-inner {
+    background-color: var(--light-background-color);
+    color: var(--secondary-text-color);
+    opacity: 0.4;
+  }
+
+  // 箭头颜色
+  .ant-calendar-header .ant-calendar-prev-century-btn:hover::before,
+  .ant-calendar-header .ant-calendar-prev-decade-btn:hover::before,
+  .ant-calendar-header .ant-calendar-prev-year-btn:hover::before,
+  .ant-calendar-header .ant-calendar-prev-century-btn:hover::after,
+  .ant-calendar-header .ant-calendar-prev-decade-btn:hover::after,
+  .ant-calendar-header .ant-calendar-prev-year-btn:hover::after,
+  .ant-calendar-header .ant-calendar-prev-month-btn:hover::before,
+  .ant-calendar-header .ant-calendar-prev-month-btn:hover::after,
+  .ant-calendar-header .ant-calendar-next-month-btn:hover::before,
+  .ant-calendar-header .ant-calendar-next-month-btn:hover::after,
+  .ant-calendar-header .ant-calendar-next-century-btn:hover::before,
+  .ant-calendar-header .ant-calendar-next-decade-btn:hover::before,
+  .ant-calendar-header .ant-calendar-next-year-btn:hover::before,
+  .ant-calendar-header .ant-calendar-next-century-btn:hover::after,
+  .ant-calendar-header .ant-calendar-next-decade-btn:hover::after,
+  .ant-calendar-header .ant-calendar-next-year-btn:hover::after {
+    border-color: var(--primary-color);
+  }
+
+  // v3
+ .ant-picker-range-arrow, .ant-picker-range-arrow:after {
+   border-color: var(--light-background-color);
+ }
+
+
+  // 时间选择颜色
+  .ant-calendar-time-picker,
+  .ant-calendar-range.ant-calendar-time .ant-calendar-time-picker-combobox {
+    background-color: var(--light-background-color);
+  }
+
+  // 已选择时间颜色
+  li.ant-calendar-time-picker-select-option-selected {
+    background-color: var(--primary-color);
+  }
+
+  // 悬停时间颜色
+  .ant-calendar-time-picker-select li:hover {
+    background-color: var(--opacity-light-primary-color);
+  }
+  // v3
+  .ant-picker-time-panel-column>li.ant-picker-time-panel-cell .ant-picker-time-panel-cell-inner:hover {
+    background-color: var(--opacity-light-primary-color);
+  }
+
+  // 今天
+  .ant-calendar-today .ant-calendar-date {
+    border-color: var(--primary-color);
+  }
+
+  // 边框颜色
+  .ant-calendar-input-wrap,
+  .ant-calendar-range .ant-calendar-body,
+  .ant-calendar-range .ant-calendar-month-panel-body,
+  .ant-calendar-range .ant-calendar-year-panel-body,
+  .ant-calendar-range .ant-calendar-decade-panel-body,
+  .ant-calendar-footer,
+  .ant-calendar-range-left .ant-calendar-time-picker-inner,
+  .ant-calendar-time-picker-select,
+  .ant-calendar-range.ant-calendar-time .ant-calendar-time-picker-combobox {
+    border-color: var(--light-border-color);
+  }
+
+  // v3
+  .ant-picker-panel,
+  .ant-picker-datetime-panel,
+  .ant-picker-date-panel,
+  .ant-picker-header,
+  .ant-picker-body,
+  .ant-picker-content,
+  .ant-picker-time-panel-column,
+  .ant-picker-datetime-panel .ant-picker-time-panel {
+    border-color: var(--light-border-color);
+  }
+
+  // 选择时间按钮
+  .ant-calendar .ant-calendar-ok-btn {
+    border-color: var(--primary-button-border-color) !important;
+    color: var(--primary-button-text-color) !important;
+    background-color: var(--primary-button-background-color) !important;
+  }
+
+  .ant-calendar-time-picker-btn {
+    color: var(--primary-button-background-color) !important;
+  }
+}

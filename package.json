@@ -9,12 +9,26 @@
     "build": "vuepress build docs"
   },
   "devDependencies": {
-    "@vuepress/plugin-docsearch": "^2.0.0-beta.51",
-    "@vuepress/plugin-search": "^2.0.0-beta.51",
-    "vuepress": "^2.0.0-beta.51"
+    "@vue/compiler-sfc": "^3.2.39",
+    "fast-glob": "^3.2.12",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "marked": "^4.0.13",
+    "vue-loader": "16.8.3",
+    "vuepress": "^1.9.7",
+    "vuepress-theme-vdoing": "^1.12.8"
   },
   "dependencies": {
-    "ant-design-vue": "^1.7.6",
-    "vuepress-theme-antdocs": "^1.4.4"
+    "ant-design-vue": "1.7.6",
+    "dayjs": "^1.11.5",
+    "highlight.js": "^11.6.0",
+    "vue": "^2.7.10",
+    "vuepress-plugin-demo-block": "^0.7.2",
+    "vuepress-plugin-fulltext-search": "^2.2.1",
+    "vuepress-plugin-one-click-copy": "^1.0.6",
+    "vuepress-plugin-zooming": "^1.1.8",
+    "clipboard": "^2.0.11",
+    "@linxl/vue-virtual-tree": "^1.0.2",
+    "lodash": "^4.17.21"
   }
 }
