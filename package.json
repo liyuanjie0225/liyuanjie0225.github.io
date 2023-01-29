@@ -1,17 +1,20 @@
 {
-  "name": "kittydocs",
+  "name": "cdoc",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "start": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.51",
+    "@vuepress/plugin-search": "^2.0.0-beta.51",
+    "vuepress": "^2.0.0-beta.51"
+  },
   "dependencies": {
-    "vitepress": "1.0.0-alpha.4"
+    "ant-design-vue": "^1.7.6",
+    "vuepress-theme-antdocs": "^1.4.4"
   }
 }

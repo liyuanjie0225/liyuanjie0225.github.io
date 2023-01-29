@@ -1,17 +1,20 @@
 ---
 home: true
-# heroImage: /images/itclancoder.jpeg
-heroText: wish文档
-tagline: JFinal Vue
-actionText: 开始阅读 →
-actionLink: /doc/index
+title: 首页
+heroImage: /images/hero.png
+actions:
+  - text: 快速上手
+    link: /baseComponents/customImg.html
+    type: primary
+  - text: 项目简介
+    link: /guide/
+    type: secondary
 features:
-  - title: Ant Design Vue
-    details:  Ant Design 的 Vue 实现，开发和服务于企业级后台产品
-  - title: JFinal
-    details: JFinal 是基于 Java 语言的极速 WEB + ORM + AOP + Template Engine 框架
-  - title: MySql
-    details: Nice!Nice!Nice!
-footer: MIT Licensed | Copyright © 2021-present 久伴轻尘
+  - title: 简洁至上
+    details: 提升开发效率
+  - title: Vue 驱动
+    details: 基于 vue 开发
+  - title: UI 组件库
+    details: 依托于 ant-design-vue
+footer: MIT Licensed | Copyright © 2018-present watrix
 ---
-
