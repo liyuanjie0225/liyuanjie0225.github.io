@@ -14,7 +14,7 @@ hero:
       link: /articles/组件库环境搭建
     - theme: alt
       text: View on Gitee
-      link: https://gitee.com/geeksdidi
+      link: https://github.com/liyuanjie0225
 
 features:
   - icon: ⚡️
