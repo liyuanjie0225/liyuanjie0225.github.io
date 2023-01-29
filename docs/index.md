@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: 东方小月的博客
+  name: 个人博客
   text: 随便写点啥.
   tagline: 帅气又迷人的小月
   image:
