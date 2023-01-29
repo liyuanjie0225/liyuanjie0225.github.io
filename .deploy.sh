@@ -8,6 +8,7 @@ npm run build
 
 git add .
 git commit -m 'deloy'
+git push 
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist
