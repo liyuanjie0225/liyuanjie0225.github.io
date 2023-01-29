@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>安装 | kittyui</title>
+    <meta name="description" content="一个vue3组件库">
+    <link rel="stylesheet" href="/assets/style.a1db3bef.css">
+    <link rel="modulepreload" href="/assets/app.b733c43a.js">
+    <link rel="modulepreload" href="/assets/articles_pina和vuex.md.87daa445.lean.js">
+    
+    <script>(()=>{const e=localStorage.getItem("vitepress-theme-appearance"),a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-66204374><!--[--><!--]--><!--[--><span tabindex="-1" data-v-40d8faed></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-40d8faed> Skip to content </a><!--]--><!----><header class="VPNav" data-v-66204374 data-v-574cb7e9><div class="VPNavBar has-sidebar" data-v-574cb7e9 data-v-23964494><div class="container" data-v-23964494><div class="VPNavBarTitle has-sidebar" data-v-23964494 data-v-6d41cef0><a class="title" href="/" data-v-6d41cef0><!--[--><img class="VPImage logo" src="/logo.png" data-v-427376cb><!--]--><!--[-->Kitty<!--]--></a></div><div class="content" data-v-23964494><!----><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-23964494 data-v-36eceb0c><span id="main-nav-aria-label" class="visually-hidden" data-v-36eceb0c>Main Navigation</span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/articles/%E7%BB%84%E4%BB%B6%E5%BA%93%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html" data-v-36eceb0c data-v-bf51d0ee data-v-0c96c854><!--[-->博客<!--]--><!----></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/guide/test.html" data-v-36eceb0c data-v-bf51d0ee data-v-0c96c854><!--[-->GuideTest<!--]--><!----></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="https://gitee.com/geeksdidi" target="_blank" rel="noopener noreferrer" data-v-36eceb0c data-v-bf51d0ee data-v-0c96c854><!--[-->gitee<!--]--><!----></a><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-36eceb0c data-v-3a84883f><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-3a84883f><span class="text" data-v-3a84883f><!----> Drop Menu <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="text-icon" data-v-3a84883f><path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path></svg></span></button><div class="menu" data-v-3a84883f><div class="VPMenu" data-v-3a84883f data-v-010f1d8c><div class="items" data-v-010f1d8c><!--[--><!--[--><div class="VPMenuGroup" data-v-010f1d8c data-v-b6b3c7ac><!----><!--[--><!--[--><div class="VPMenuLink" data-v-b6b3c7ac data-v-05edcde0><a class="VPLink link" href="/item-A1.html" data-v-05edcde0 data-v-0c96c854><!--[-->Item A1<!--]--><!----></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-b6b3c7ac data-v-05edcde0><a class="VPLink link" href="/item-A2.html" data-v-05edcde0 data-v-0c96c854><!--[-->Item A2<!--]--><!----></a></div><!--]--><!--]--></div><!--]--><!--[--><div class="VPMenuGroup" data-v-010f1d8c data-v-b6b3c7ac><!----><!--[--><!--[--><div class="VPMenuLink" data-v-b6b3c7ac data-v-05edcde0><a class="VPLink link" href="/item-B1.html" data-v-05edcde0 data-v-0c96c854><!--[-->Item B1<!--]--><!----></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-b6b3c7ac data-v-05edcde0><a class="VPLink link" href="/item-B2.html" data-v-05edcde0 data-v-0c96c854><!--[-->Item B2<!--]--><!----></a></div><!--]--><!--]--></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-23964494 data-v-513bb74a><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" aria-label="toggle dark mode" data-v-513bb74a data-v-57172cb8 data-v-eeb71742><span class="check" data-v-eeb71742><span class="icon" data-v-eeb71742><!--[--><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="sun" data-v-57172cb8><path d="M12,18c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S15.3,18,12,18zM12,8c-2.2,0-4,1.8-4,4c0,2.2,1.8,4,4,4c2.2,0,4-1.8,4-4C16,9.8,14.2,8,12,8z"></path><path d="M12,4c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,3.6,12.6,4,12,4z"></path><path d="M12,24c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,23.6,12.6,24,12,24z"></path><path d="M5.6,6.6c-0.3,0-0.5-0.1-0.7-0.3L3.5,4.9c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C6.2,6.5,5.9,6.6,5.6,6.6z"></path><path d="M19.8,20.8c-0.3,0-0.5-0.1-0.7-0.3l-1.4-1.4c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C20.3,20.7,20,20.8,19.8,20.8z"></path><path d="M3,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S3.6,13,3,13z"></path><path d="M23,13h-2c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path><path d="M4.2,20.8c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C4.7,20.7,4.5,20.8,4.2,20.8z"></path><path d="M18.4,6.6c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C18.9,6.5,18.6,6.6,18.4,6.6z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="moon" data-v-57172cb8><path d="M12.1,22c-0.3,0-0.6,0-0.9,0c-5.5-0.5-9.5-5.4-9-10.9c0.4-4.8,4.2-8.6,9-9c0.4,0,0.8,0.2,1,0.5c0.2,0.3,0.2,0.8-0.1,1.1c-2,2.7-1.4,6.4,1.3,8.4c2.1,1.6,5,1.6,7.1,0c0.3-0.2,0.7-0.3,1.1-0.1c0.3,0.2,0.5,0.6,0.5,1c-0.2,2.7-1.5,5.1-3.6,6.8C16.6,21.2,14.4,22,12.1,22zM9.3,4.4c-2.9,1-5,3.6-5.2,6.8c-0.4,4.4,2.8,8.3,7.2,8.7c2.1,0.2,4.2-0.4,5.8-1.8c1.1-0.9,1.9-2.1,2.4-3.4c-2.5,0.9-5.3,0.5-7.5-1.1C9.2,11.4,8.1,7.7,9.3,4.4z"></path></svg><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-23964494 data-v-48b47c0c data-v-06a41780><!--[--><a class="VPSocialLink" href="https://gitee.com/geeksdidi" title="github" target="_blank" rel="noopener noreferrer" data-v-06a41780 data-v-398c9053><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="icon" data-v-398c9053><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg><span class="visually-hidden" data-v-398c9053>github</span></a><a class="VPSocialLink" href="..." title="twitter" target="_blank" rel="noopener noreferrer" data-v-06a41780 data-v-398c9053><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="icon" data-v-398c9053><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg><span class="visually-hidden" data-v-398c9053>twitter</span></a><a class="VPSocialLink" href="..." target="_blank" rel="noopener noreferrer" data-v-06a41780 data-v-398c9053><!----><span class="visually-hidden" data-v-398c9053>{
+  &quot;svg&quot;: &quot;&lt;svg role=\&quot;img\&quot; viewBox=\&quot;0 0 24 24\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot;&gt;&lt;title&gt;Dribbble&lt;/title&gt;&lt;path d=\&quot;M12...6.38z\&quot;/&gt;&lt;/svg&gt;&quot;
+}</span></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-23964494 data-v-bcfe4bc6 data-v-3a84883f><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-3a84883f><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="icon" data-v-3a84883f><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></svg></button><div class="menu" data-v-3a84883f><div class="VPMenu" data-v-3a84883f data-v-010f1d8c><!----><!--[--><!--[--><!----><div class="group" data-v-bcfe4bc6><div class="item appearance" data-v-bcfe4bc6><p class="label" data-v-bcfe4bc6>Appearance</p><div class="appearance-action" data-v-bcfe4bc6><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" aria-label="toggle dark mode" data-v-bcfe4bc6 data-v-57172cb8 data-v-eeb71742><span class="check" data-v-eeb71742><span class="icon" data-v-eeb71742><!--[--><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="sun" data-v-57172cb8><path d="M12,18c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S15.3,18,12,18zM12,8c-2.2,0-4,1.8-4,4c0,2.2,1.8,4,4,4c2.2,0,4-1.8,4-4C16,9.8,14.2,8,12,8z"></path><path d="M12,4c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,3.6,12.6,4,12,4z"></path><path d="M12,24c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,23.6,12.6,24,12,24z"></path><path d="M5.6,6.6c-0.3,0-0.5-0.1-0.7-0.3L3.5,4.9c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C6.2,6.5,5.9,6.6,5.6,6.6z"></path><path d="M19.8,20.8c-0.3,0-0.5-0.1-0.7-0.3l-1.4-1.4c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C20.3,20.7,20,20.8,19.8,20.8z"></path><path d="M3,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S3.6,13,3,13z"></path><path d="M23,13h-2c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path><path d="M4.2,20.8c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C4.7,20.7,4.5,20.8,4.2,20.8z"></path><path d="M18.4,6.6c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C18.9,6.5,18.6,6.6,18.4,6.6z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="moon" data-v-57172cb8><path d="M12.1,22c-0.3,0-0.6,0-0.9,0c-5.5-0.5-9.5-5.4-9-10.9c0.4-4.8,4.2-8.6,9-9c0.4,0,0.8,0.2,1,0.5c0.2,0.3,0.2,0.8-0.1,1.1c-2,2.7-1.4,6.4,1.3,8.4c2.1,1.6,5,1.6,7.1,0c0.3-0.2,0.7-0.3,1.1-0.1c0.3,0.2,0.5,0.6,0.5,1c-0.2,2.7-1.5,5.1-3.6,6.8C16.6,21.2,14.4,22,12.1,22zM9.3,4.4c-2.9,1-5,3.6-5.2,6.8c-0.4,4.4,2.8,8.3,7.2,8.7c2.1,0.2,4.2-0.4,5.8-1.8c1.1-0.9,1.9-2.1,2.4-3.4c-2.5,0.9-5.3,0.5-7.5-1.1C9.2,11.4,8.1,7.7,9.3,4.4z"></path></svg><!--]--></span></span></button></div></div></div><div class="group" data-v-bcfe4bc6><div class="item social-links" data-v-bcfe4bc6><div class="VPSocialLinks social-links-list" data-v-bcfe4bc6 data-v-06a41780><!--[--><a class="VPSocialLink" href="https://gitee.com/geeksdidi" title="github" target="_blank" rel="noopener noreferrer" data-v-06a41780 data-v-398c9053><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="icon" data-v-398c9053><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg><span class="visually-hidden" data-v-398c9053>github</span></a><a class="VPSocialLink" href="..." title="twitter" target="_blank" rel="noopener noreferrer" data-v-06a41780 data-v-398c9053><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="icon" data-v-398c9053><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg><span class="visually-hidden" data-v-398c9053>twitter</span></a><a class="VPSocialLink" href="..." target="_blank" rel="noopener noreferrer" data-v-06a41780 data-v-398c9053><!----><span class="visually-hidden" data-v-398c9053>{
+  &quot;svg&quot;: &quot;&lt;svg role=\&quot;img\&quot; viewBox=\&quot;0 0 24 24\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot;&gt;&lt;title&gt;Dribbble&lt;/title&gt;&lt;path d=\&quot;M12...6.38z\&quot;/&gt;&lt;/svg&gt;&quot;
+}</span></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-23964494 data-v-702843d0><span class="container" data-v-702843d0><span class="top" data-v-702843d0></span><span class="middle" data-v-702843d0></span><span class="bottom" data-v-702843d0></span></span></button></div></div></div><!----></header><div class="VPLocalNav" data-v-66204374 data-v-a9a4d510><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-a9a4d510><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="menu-icon" data-v-a9a4d510><path d="M17,11H3c-0.6,0-1-0.4-1-1s0.4-1,1-1h14c0.6,0,1,0.4,1,1S17.6,11,17,11z"></path><path d="M21,7H3C2.4,7,2,6.6,2,6s0.4-1,1-1h18c0.6,0,1,0.4,1,1S21.6,7,21,7z"></path><path d="M21,15H3c-0.6,0-1-0.4-1-1s0.4-1,1-1h18c0.6,0,1,0.4,1,1S21.6,15,21,15z"></path><path d="M17,19H3c-0.6,0-1-0.4-1-1s0.4-1,1-1h14c0.6,0,1,0.4,1,1S17.6,19,17,19z"></path></svg><span class="menu-text" data-v-a9a4d510>Menu</span></button><a class="top-link" href="#" data-v-a9a4d510> Return to top </a></div><aside class="VPSidebar" data-v-66204374 data-v-575b3a38><nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-575b3a38><span class="visually-hidden" id="sidebar-aria-label" data-v-575b3a38> Sidebar Navigation </span><!--[--><div class="group" data-v-575b3a38><section class="VPSidebarGroup collapsible" data-v-575b3a38 data-v-4c0613ca><div class="title" role="button" data-v-4c0613ca><h2 class="title-text" data-v-4c0613ca>组件库源码实现</h2><div class="action" data-v-4c0613ca><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 24 24" class="icon minus" data-v-4c0613ca><path d="M19,2H5C3.3,2,2,3.3,2,5v14c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3V5C22,3.3,20.7,2,19,2zM20,19c0,0.6-0.4,1-1,1H5c-0.6,0-1-0.4-1-1V5c0-0.6,0.4-1,1-1h14c0.6,0,1,0.4,1,1V19z"></path><path d="M16,11H8c-0.6,0-1,0.4-1,1s0.4,1,1,1h8c0.6,0,1-0.4,1-1S16.6,11,16,11z"></path></svg><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon plus" data-v-4c0613ca><path d="M19,2H5C3.3,2,2,3.3,2,5v14c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3V5C22,3.3,20.7,2,19,2z M20,19c0,0.6-0.4,1-1,1H5c-0.6,0-1-0.4-1-1V5c0-0.6,0.4-1,1-1h14c0.6,0,1,0.4,1,1V19z"></path><path d="M16,11h-3V8c0-0.6-0.4-1-1-1s-1,0.4-1,1v3H8c-0.6,0-1,0.4-1,1s0.4,1,1,1h3v3c0,0.6,0.4,1,1,1s1-0.4,1-1v-3h3c0.6,0,1-0.4,1-1S16.6,11,16,11z"></path></svg></div></div><div class="items" data-v-4c0613ca><!--[--><a class="VPLink link" href="/articles/%E7%BB%84%E4%BB%B6%E5%BA%93%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html" data-v-4c0613ca data-v-4ac05124 data-v-0c96c854><!--[--><span class="link-text" data-v-4ac05124>组件库环境搭建</span><!--]--><!----></a><a class="VPLink link" href="/articles/gulp%E7%9A%84%E4%BD%BF%E7%94%A8.html" data-v-4c0613ca data-v-4ac05124 data-v-0c96c854><!--[--><span class="link-text" data-v-4ac05124>gulp的使用</span><!--]--><!----></a><!--]--></div></section></div><div class="group" data-v-575b3a38><section class="VPSidebarGroup collapsible collapsed" data-v-575b3a38 data-v-4c0613ca><div class="title" role="button" data-v-4c0613ca><h2 class="title-text" data-v-4c0613ca>vue教程</h2><div class="action" data-v-4c0613ca><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 24 24" class="icon minus" data-v-4c0613ca><path d="M19,2H5C3.3,2,2,3.3,2,5v14c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3V5C22,3.3,20.7,2,19,2zM20,19c0,0.6-0.4,1-1,1H5c-0.6,0-1-0.4-1-1V5c0-0.6,0.4-1,1-1h14c0.6,0,1,0.4,1,1V19z"></path><path d="M16,11H8c-0.6,0-1,0.4-1,1s0.4,1,1,1h8c0.6,0,1-0.4,1-1S16.6,11,16,11z"></path></svg><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon plus" data-v-4c0613ca><path d="M19,2H5C3.3,2,2,3.3,2,5v14c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3V5C22,3.3,20.7,2,19,2z M20,19c0,0.6-0.4,1-1,1H5c-0.6,0-1-0.4-1-1V5c0-0.6,0.4-1,1-1h14c0.6,0,1,0.4,1,1V19z"></path><path d="M16,11h-3V8c0-0.6-0.4-1-1-1s-1,0.4-1,1v3H8c-0.6,0-1,0.4-1,1s0.4,1,1,1h3v3c0,0.6,0.4,1,1,1s1-0.4,1-1v-3h3c0.6,0,1-0.4,1-1S16.6,11,16,11z"></path></svg></div></div><div class="items" data-v-4c0613ca><!--[--><a class="VPLink link active" href="/articles/pina%E5%92%8Cvuex.html" data-v-4c0613ca data-v-4ac05124 data-v-0c96c854><!--[--><span class="link-text" data-v-4ac05124>pina和vuex</span><!--]--><!----></a><!--]--></div></section></div><!--]--></nav></aside><div class="VPContent has-sidebar" id="VPContent" data-v-66204374 data-v-0e4d175a><div class="VPDoc has-sidebar" data-v-0e4d175a data-v-542b5b3a><div class="container" data-v-542b5b3a><div class="aside" data-v-542b5b3a><div class="aside-curtain" data-v-542b5b3a></div><div class="aside-container" data-v-542b5b3a><div class="aside-content" data-v-542b5b3a><div class="VPDocAside" data-v-542b5b3a data-v-719cedd0><!--[--><!--]--><!--[--><!--]--><div class="VPDocAsideOutline has-outline" data-v-719cedd0 data-v-090513d1><div class="content" data-v-090513d1><div class="outline-marker" data-v-090513d1></div><div class="outline-title" data-v-090513d1>On this page</div><nav aria-labelledby="doc-outline-aria-label" data-v-090513d1><span class="visually-hidden" id="doc-outline-aria-label" data-v-090513d1> Table of Contents for current page </span><ul class="root" data-v-090513d1><!--[--><li style="" data-v-090513d1><a class="outline-link" href="#安装" data-v-090513d1>安装</a><!----></li><li style="" data-v-090513d1><a class="outline-link" href="#挂载" data-v-090513d1>挂载</a><!----></li><li style="" data-v-090513d1><a class="outline-link" href="#修改状态" data-v-090513d1>修改状态</a><!----></li><li style="" data-v-090513d1><a class="outline-link" href="#pinia解构-storetorefs" data-v-090513d1>Pinia解构(storeToRefs)</a><!----></li><li style="" data-v-090513d1><a class="outline-link" href="#getters" data-v-090513d1>getters</a><!----></li><li style="" data-v-090513d1><a class="outline-link" href="#modules" data-v-090513d1>modules</a><!----></li><li style="" data-v-090513d1><a class="outline-link" href="#写在最后" data-v-090513d1>写在最后</a><!----></li><!--]--></ul></nav></div></div><!--[--><!--]--><div class="spacer" data-v-719cedd0></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-542b5b3a><div class="content-container" data-v-542b5b3a><!--[--><!--]--><main class="main" data-v-542b5b3a><div style="position:relative;" class="vp-doc _articles_pina%E5%92%8Cvuex" data-v-542b5b3a><div><p>Pinia和Vuex一样都是是vue的全局状态管理器。其实Pinia就是Vuex5，只不过为了尊重原作者的贡献就沿用了这个看起来很甜的名字Pinia。</p><p>本文将通过Vue3的形式对两者的不同实现方式进行对比，让你在以后工作中无论使用到Pinia还是Vuex的时候都能够游刃有余。</p><p>既然我们要对比两者的实现方式，那么我们肯定要先在我们的Vue3项目中引入这两个状态管理器（实际项目中千万不要即用Vuex又用Pinia，不然你会被同事请去喝茶的。下面就让我们看下它们的使用方式吧</p><h2 id="安装" tabindex="-1">安装 <a class="header-anchor" href="#安装" aria-hidden="true">#</a></h2><ul><li>Vuex</li></ul><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">npm i vuex -S</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><ul><li>Pinia</li></ul><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">npm i pinia -S</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h2 id="挂载" tabindex="-1">挂载 <a class="header-anchor" href="#挂载" aria-hidden="true">#</a></h2><h3 id="vuex" tabindex="-1">Vuex <a class="header-anchor" href="#vuex" aria-hidden="true">#</a></h3><p>在src目录下新建vuexStore,实际项目中你只需要建一个store目录即可，由于我们需要两种状态管理器，所以需要将其分开并创建两个store目录</p><p>新建vuexStore/index.js</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { createStore } from &#39;vuex&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">export default createStore({</span></span>
+<span class="line"><span style="color:#A6ACCD;">    //全局state，类似于vue种的data</span></span>
+<span class="line"><span style="color:#A6ACCD;">    state() {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      return {</span></span>
+<span class="line"><span style="color:#A6ACCD;">        vuexmsg: &quot;hello vuex&quot;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">        name: &quot;xiaoyue&quot;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">      };</span></span>
+<span class="line"><span style="color:#A6ACCD;">    },</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">    //修改state函数</span></span>
+<span class="line"><span style="color:#A6ACCD;">    mutations: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    },</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">    //提交的mutation可以包含任意异步操作</span></span>
+<span class="line"><span style="color:#A6ACCD;">    actions: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    },</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">    //类似于vue中的计算属性</span></span>
+<span class="line"><span style="color:#A6ACCD;">    getters: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    },</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">    //将store分割成模块（module）,应用较大时使用</span></span>
+<span class="line"><span style="color:#A6ACCD;">    modules: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    }</span></span>
+<span class="line"><span style="color:#A6ACCD;">})</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>main.js引入</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { createApp } from &#39;vue&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import App from &#39;./App.vue&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import store from &#39;@/vuexStore&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">createApp(App).use(store).mount(&#39;#app&#39;)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>App.vue测试</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">&lt;template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">  &lt;div&gt;&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import { useStore } from &#39;vuex&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let vuexStore = useStore()</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(vuexStore.state.vuexmsg); //hello vuex</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/script&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>页面正常打印hello vuex说明我们的Vuex已经挂载成功了</p><h3 id="pinia" tabindex="-1">Pinia <a class="header-anchor" href="#pinia" aria-hidden="true">#</a></h3><ul><li>main.js引入</li></ul><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { createApp } from &quot;vue&quot;;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import App from &quot;./App.vue&quot;;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import {createPinia} from &#39;pinia&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">const pinia = createPinia()</span></span>
+<span class="line"><span style="color:#A6ACCD;">createApp(App).use(pinia).mount(&quot;#app&quot;);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><ul><li>创建Store</li></ul><p>src下新建piniaStore/storeA.js</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { defineStore } from &quot;pinia&quot;;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">export const storeA = defineStore(&quot;storeA&quot;, {</span></span>
+<span class="line"><span style="color:#A6ACCD;">  state: () =&gt; {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    return {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      piniaMsg: &quot;hello pinia&quot;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    };</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  getters: {},</span></span>
+<span class="line"><span style="color:#A6ACCD;">  actions: {},</span></span>
+<span class="line"><span style="color:#A6ACCD;">});</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><ul><li>App.vue使用</li></ul><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">&lt;template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">  &lt;div&gt;&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import { storeA } from &#39;@/piniaStore/storeA&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let piniaStoreA = storeA()</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(piniaStoreA.piniaMsg); //hello pinia</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/script&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>从这里我们可以看出pinia中没有了mutations和modules，pinia不必以嵌套（通过modules引入）的方式引入模块，因为它的每个store便是一个模块，如storeA，storeB... 。 在我们使用Vuex的时候每次修改state的值都需要调用mutations里的修改函数（下面会说到），因为Vuex需要追踪数据的变化，这使我们写起来比较繁琐。而pinia则不再需要mutations，同步异步都可在actions进行操作，至于它没有了mutations具体是如何最终到state变化的，这里我们不过多深究,<s>大概好像应该是通过hooks回调的形式解决的把（我也没研究过，瞎猜的</s>。</p><h2 id="修改状态" tabindex="-1">修改状态 <a class="header-anchor" href="#修改状态" aria-hidden="true">#</a></h2><p>获取state的值从上面我们已经可以一目了然的看到了，下面让我们看看他俩修改state的方法吧</p><h3 id="vuex-1" tabindex="-1">vuex <a class="header-anchor" href="#vuex-1" aria-hidden="true">#</a></h3><p>vuex在组件中直接修改state，如App.vue</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">&lt;template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">  &lt;div&gt;{{vuexStore.state.vuexmsg}}&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import { useStore } from &#39;vuex&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let vuexStore = useStore()</span></span>
+<span class="line"><span style="color:#A6ACCD;">vuexStore.state.vuexmsg = &#39;hello juejin&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(vuexStore.state.vuexmsg)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/script&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>可以看出我们是可以直接在组件中修改state的而且还是响应式的，但是如果这样做了，vuex不能够记录每一次state的变化记录，影响我们的调试。当vuex开启严格模式的时候，直接修改state会抛出错误，所以官方建议我们开启严格模式，所有的state变更都在vuex内部进行，在mutations进行修改。例如vuexStore/index.js:</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { createStore } from &quot;vuex&quot;;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">export default createStore({</span></span>
+<span class="line"><span style="color:#A6ACCD;">  strict: true,</span></span>
+<span class="line"><span style="color:#A6ACCD;">  //全局state，类似于vue种的data</span></span>
+<span class="line"><span style="color:#A6ACCD;">  state: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    vuexmsg: &quot;hello vuex&quot;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">  //修改state函数</span></span>
+<span class="line"><span style="color:#A6ACCD;">  mutations: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    setVuexMsg(state, data) {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      state.vuexmsg = data;</span></span>
+<span class="line"><span style="color:#A6ACCD;">    },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">  //提交的mutation可以包含任意异步操作</span></span>
+<span class="line"><span style="color:#A6ACCD;">  actions: {},</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">  //类似于vue中的计算属性</span></span>
+<span class="line"><span style="color:#A6ACCD;">  getters: {},</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">  //将store分割成模块（module）,应用较大时使用</span></span>
+<span class="line"><span style="color:#A6ACCD;">  modules: {},</span></span>
+<span class="line"><span style="color:#A6ACCD;">});</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>当我们需要修改vuexmsg的时候需要提交setVuexMsg方法，如App.vue</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">&lt;template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">  &lt;div&gt;{{ vuexStore.state.vuexmsg }}&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import { useStore } from &#39;vuex&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let vuexStore = useStore()</span></span>
+<span class="line"><span style="color:#A6ACCD;">vuexStore.commit(&#39;setVuexMsg&#39;, &#39;hello juejin&#39;)</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(vuexStore.state.vuexmsg) //hello juejin</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/script&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>或者我们可以在actions中进行提交mutations修改state:</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { createStore } from &quot;vuex&quot;;</span></span>
+<span class="line"><span style="color:#A6ACCD;">export default createStore({</span></span>
+<span class="line"><span style="color:#A6ACCD;">  strict: true,</span></span>
+<span class="line"><span style="color:#A6ACCD;">  //全局state，类似于vue种的data</span></span>
+<span class="line"><span style="color:#A6ACCD;">  state() {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    return {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      vuexmsg: &quot;hello vuex&quot;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    }</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">  //修改state函数</span></span>
+<span class="line"><span style="color:#A6ACCD;">  mutations: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    setVuexMsg(state, data) {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      state.vuexmsg = data;</span></span>
+<span class="line"><span style="color:#A6ACCD;">    },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">  //提交的mutation可以包含任意异步操作</span></span>
+<span class="line"><span style="color:#A6ACCD;">  actions: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    async getState({ commit }) {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      //const result = await xxxx 假设这里进行了请求并拿到了返回值</span></span>
+<span class="line"><span style="color:#A6ACCD;">      commit(&quot;setVuexMsg&quot;, &quot;hello juejin&quot;);</span></span>
+<span class="line"><span style="color:#A6ACCD;">    },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  }</span></span>
+<span class="line"><span style="color:#A6ACCD;">});</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>组件中使用dispatch进行分发actions</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">&lt;template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">  &lt;div&gt;{{ vuexStore.state.vuexmsg }}&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import { useStore } from &#39;vuex&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let vuexStore = useStore()</span></span>
+<span class="line"><span style="color:#A6ACCD;">vuexStore.dispatch(&#39;getState&#39;)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/script&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>一般来说，vuex中的流程是首先actions一般放异步函数，拿请求后端接口为例，当后端接口返回值的时候，actions中会提交一个mutations中的函数，然后这个函数对vuex中的状态（state）进行一个修改，组件中再渲染这个状态，从而实现整个数据流程都在vuex内部进行便于检测。直接看图，一目了然</p><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/27f85d7d22aa44e1a01cd6f4121afd86~tplv-k3u1fbpfcp-watermark.image?" alt="1f0c7f44205b2a793829d22509fac74.png"></p><h3 id="pinia-1" tabindex="-1">Pinia <a class="header-anchor" href="#pinia-1" aria-hidden="true">#</a></h3><ul><li>直接修改</li></ul><p>相比于Vuex，Pinia是可以直接修改状态的，并且调试工具能够记录到每一次state的变化，如App.vue</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">&lt;template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">  &lt;div&gt;{{ piniaStoreA.piniaMsg }}&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import { storeA } from &#39;@/piniaStore/storeA&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let piniaStoreA = storeA()</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(piniaStoreA.piniaMsg); //hello pinia</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">piniaStoreA.piniaMsg = &#39;hello juejin&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(piniaStoreA.piniaMsg); //hello juejin</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/script&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><ul><li>$patch</li></ul><p>使用$patch方法可以修改多个state中的值,比如我们在piniaStore/storeA.js中的state增加一个name</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { defineStore } from &quot;pinia&quot;;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">export const storeA = defineStore(&quot;storeA&quot;, {</span></span>
+<span class="line"><span style="color:#A6ACCD;">  state: () =&gt; {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    return {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      piniaMsg: &quot;hello pinia&quot;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">      name: &quot;xiaoyue&quot;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    };</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  getters: {},</span></span>
+<span class="line"><span style="color:#A6ACCD;">  actions: {},</span></span>
+<span class="line"><span style="color:#A6ACCD;">});</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>然后我们在App.vue中进行修改这两个state</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { storeA } from &#39;@/piniaStore/storeA&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let piniaStoreA = storeA()</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(piniaStoreA.name); //xiaoyue</span></span>
+<span class="line"><span style="color:#A6ACCD;">piniaStoreA.$patch({</span></span>
+<span class="line"><span style="color:#A6ACCD;">  piniaMsg: &#39;hello juejin&#39;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">  name: &#39;daming&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">})</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(piniaStoreA.name);//daming</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>当然也是支持修改单个状态的如</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">piniaStoreA.$patch({</span></span>
+<span class="line"><span style="color:#A6ACCD;">  name: &#39;daming&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">})</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>$patch还可以使用函数的方式进行修改状态</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { storeA } from &#39;@/piniaStore/storeA&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let piniaStoreA = storeA()</span></span>
+<span class="line"><span style="color:#A6ACCD;">cartStore.$patch((state) =&gt; {</span></span>
+<span class="line"><span style="color:#A6ACCD;">  state.name = &#39;daming&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">  state.piniaMsg = &#39;hello juejin&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">})</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><ul><li>在actions中进行修改</li></ul><p>不同于Vuex的是，Pinia去掉了mutations，所以在actions中修改state就行Vuex在mutations修改state一样。其实这也是我比较推荐的一种修改状态的方式，就像上面说的，这样可以实现整个数据流程都在状态管理器内部，便于管理。</p><p>在piniaStore/storeA.js的actions添加一个修改name的函数</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { defineStore } from &quot;pinia&quot;;</span></span>
+<span class="line"><span style="color:#A6ACCD;">export const storeA = defineStore(&quot;storeA&quot;, {</span></span>
+<span class="line"><span style="color:#A6ACCD;">  state: () =&gt; {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    return {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      piniaMsg: &quot;hello pinia&quot;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">      name: &quot;xiao yue&quot;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    };</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  actions: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    setName(data) {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      this.name = data;</span></span>
+<span class="line"><span style="color:#A6ACCD;">    },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;">});</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>组件App.vue中调用不需要再使用dispatch函数，直接调用store的方法即可</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { storeA } from &#39;@/piniaStore/storeA&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let piniaStoreA = storeA()</span></span>
+<span class="line"><span style="color:#A6ACCD;">piniaStoreA.setName(&#39;daming&#39;)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><ul><li>重置state</li></ul><p>Pinia可以使用$reset将状态重置为初始值</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { storeA } from &#39;@/piniaStore/storeA&#39; </span></span>
+<span class="line"><span style="color:#A6ACCD;">let piniaStoreA = storeA()</span></span>
+<span class="line"><span style="color:#A6ACCD;">piniaStoreA.$reset()</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h2 id="pinia解构-storetorefs" tabindex="-1">Pinia解构(storeToRefs) <a class="header-anchor" href="#pinia解构-storetorefs" aria-hidden="true">#</a></h2><p>当我们组件中需要用到state中多个参数时，使用解构的方式取值往往是很方便的，但是传统的ES6解构会使state失去响应式，比如组件App.vue,我们先解构取得name值，然后再去改变name值，然后看页面是否变化</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">&lt;template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">  &lt;div&gt;{{ name }}&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import { storeA } from &#39;@/piniaStore/storeA&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let piniaStoreA = storeA()</span></span>
+<span class="line"><span style="color:#A6ACCD;">let { piniaMsg, name } = piniaStoreA</span></span>
+<span class="line"><span style="color:#A6ACCD;">piniaStoreA.$patch({</span></span>
+<span class="line"><span style="color:#A6ACCD;">  name: &#39;daming&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">})</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/script&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>浏览器展示如下</p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e93cdd9d0c7c44a1b8724560bc91a40a~tplv-k3u1fbpfcp-watermark.image?" alt="1657813193335.jpg"></p><p>我们可以发现浏览器并没有更新页面为daming</p><p>为了解决这个问题，Pinia提供了一个结构方法<strong>storeToRefs</strong>，我们将组件App.vue使用<strong>storeToRefs</strong>解构</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">&lt;template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">  &lt;div&gt;{{ name }}&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import { storeA } from &#39;@/piniaStore/storeA&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import { storeToRefs } from &#39;pinia&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let piniaStoreA = storeA()</span></span>
+<span class="line"><span style="color:#A6ACCD;">let { piniaMsg, name } = storeToRefs(piniaStoreA)</span></span>
+<span class="line"><span style="color:#A6ACCD;">piniaStoreA.$patch({</span></span>
+<span class="line"><span style="color:#A6ACCD;">  name: &#39;daming&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">})</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/script&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>再看下页面变化</p><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/74379adc42c04fa0b9c4379abeda444b~tplv-k3u1fbpfcp-watermark.image?" alt="1657813178903.jpg"></p><p>我们发现页面已经被更新成daming了</p><h2 id="getters" tabindex="-1">getters <a class="header-anchor" href="#getters" aria-hidden="true">#</a></h2><p>其实Vuex中的getters和Pinia中的getters用法是一致的，用于自动监听对应state的变化，从而动态计算返回值(和vue中的计算属性差不多),并且getters的值也具有缓存特性</p><h3 id="pinia-2" tabindex="-1">Pinia <a class="header-anchor" href="#pinia-2" aria-hidden="true">#</a></h3><p>我们先将piniaStore/storeA.js改为</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { defineStore } from &quot;pinia&quot;;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">export const storeA = defineStore(&quot;storeA&quot;, {</span></span>
+<span class="line"><span style="color:#A6ACCD;">  state: () =&gt; {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    return {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      count1: 1,</span></span>
+<span class="line"><span style="color:#A6ACCD;">      count2: 2,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    };</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  getters: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    sum() {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      console.log(&#39;我被调用了!&#39;)</span></span>
+<span class="line"><span style="color:#A6ACCD;">      return this.count1 + this.count2;</span></span>
+<span class="line"><span style="color:#A6ACCD;">    },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;">});</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>然后在组件App.vue中获取sum</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">&lt;template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">  &lt;div&gt;{{ piniaStoreA.sum }}&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/template&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import { storeA } from &#39;@/piniaStore/storeA&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let piniaStoreA = storeA()</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(piniaStoreA.sum) //3</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;/script&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>让我们来看下什么是缓存特性。首先我们在组件多次访问sum再看下控制台打印</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { storeA } from &#39;@/piniaStore/storeA&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let piniaStoreA = storeA()</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(piniaStoreA.sum)</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(piniaStoreA.sum)</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(piniaStoreA.sum)</span></span>
+<span class="line"><span style="color:#A6ACCD;">piniaStoreA.count1 = 2</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(piniaStoreA.sum)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a444da11d25342f693333c8e47e94f98~tplv-k3u1fbpfcp-watermark.image?" alt="1657814372565.jpg"></p><p>从打印结果我们可以看出只有在首次使用用或者当我们改变sum所依赖的值的时候，getters中的sum才会被调用</p><h3 id="vuex-2" tabindex="-1">Vuex <a class="header-anchor" href="#vuex-2" aria-hidden="true">#</a></h3><p>Vuex中的getters使用和Pinia的使用方式类似，就不再进行过多说明,写法如下vuexStore/index.js</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { createStore } from &quot;vuex&quot;;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">export default createStore({</span></span>
+<span class="line"><span style="color:#A6ACCD;">  strict: true,</span></span>
+<span class="line"><span style="color:#A6ACCD;">  //全局state，类似于vue种的data</span></span>
+<span class="line"><span style="color:#A6ACCD;">  state: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    count1: 1,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    count2: 2,</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">  //类似于vue中的计算属性</span></span>
+<span class="line"><span style="color:#A6ACCD;">  getters: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    sum(state){</span></span>
+<span class="line"><span style="color:#A6ACCD;">      return state.count1 + state.count2</span></span>
+<span class="line"><span style="color:#A6ACCD;">    }</span></span>
+<span class="line"><span style="color:#A6ACCD;">  }</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">});</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h2 id="modules" tabindex="-1">modules <a class="header-anchor" href="#modules" aria-hidden="true">#</a></h2><p>如果项目比较大，使用单一状态库，项目的状态库就会集中到一个大对象上，显得十分臃肿难以维护。所以Vuex就允许我们将其分割成模块（modules），每个模块都拥有自己state，mutations,actions...。而Pinia每个状态库本身就是一个模块。</p><h3 id="pinia-3" tabindex="-1">Pinia <a class="header-anchor" href="#pinia-3" aria-hidden="true">#</a></h3><p>Pinia没有modules，如果想使用多个store，直接定义多个store传入不同的id即可，如：</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { defineStore } from &quot;pinia&quot;;</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">export const storeA = defineStore(&quot;storeA&quot;, {...});</span></span>
+<span class="line"><span style="color:#A6ACCD;">export const storeB = defineStore(&quot;storeB&quot;, {...});</span></span>
+<span class="line"><span style="color:#A6ACCD;">export const storeC = defineStore(&quot;storeB&quot;, {...});</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h3 id="vuex-3" tabindex="-1">Vuex <a class="header-anchor" href="#vuex-3" aria-hidden="true">#</a></h3><p>一般来说每个module都会新建一个文件，然后再引入这个总的入口index.js中，这里为了方便就写在了一起</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { createStore } from &quot;vuex&quot;;</span></span>
+<span class="line"><span style="color:#A6ACCD;">const moduleA = {</span></span>
+<span class="line"><span style="color:#A6ACCD;">  state: () =&gt; ({ </span></span>
+<span class="line"><span style="color:#A6ACCD;">    count:1</span></span>
+<span class="line"><span style="color:#A6ACCD;">   }),</span></span>
+<span class="line"><span style="color:#A6ACCD;">  mutations: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    setCount(state, data) {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      state.count = data;</span></span>
+<span class="line"><span style="color:#A6ACCD;">    },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  actions: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    getuser() {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      //do something</span></span>
+<span class="line"><span style="color:#A6ACCD;">    },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  getters: { ... }</span></span>
+<span class="line"><span style="color:#A6ACCD;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">const moduleB = {</span></span>
+<span class="line"><span style="color:#A6ACCD;">  state: () =&gt; ({ ... }),</span></span>
+<span class="line"><span style="color:#A6ACCD;">  mutations: { ... },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  actions: { ... }</span></span>
+<span class="line"><span style="color:#A6ACCD;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">export default createStore({</span></span>
+<span class="line"><span style="color:#A6ACCD;">  strict: true,</span></span>
+<span class="line"><span style="color:#A6ACCD;">  //全局state，类似于vue种的data</span></span>
+<span class="line"><span style="color:#A6ACCD;">  state() {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    return {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      vuexmsg: &quot;hello vuex&quot;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">      name: &quot;xiaoyue&quot;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    };</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  modules: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    moduleA,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    moduleB</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;">});</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>使用moduleA</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">import { useStore } from &#39;vuex&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">let vuexStore = useStore()</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(vuexStore.state.moduleA.count) //1</span></span>
+<span class="line"><span style="color:#A6ACCD;">vuexStore.commit(&#39;setCount&#39;, 2)</span></span>
+<span class="line"><span style="color:#A6ACCD;">console.log(vuexStore.state.moduleA.count) //2</span></span>
+<span class="line"><span style="color:#A6ACCD;">vuexStore.dispatch(&#39;getuser&#39;)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>一般我们为了防止提交一些mutation或者actions中的方法重名，modules一般会采用命名空间的方式 <strong>namespaced: true</strong> 如moduleA：</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">const moduleA = {</span></span>
+<span class="line"><span style="color:#A6ACCD;">  namespaced: true,</span></span>
+<span class="line"><span style="color:#A6ACCD;">  state: () =&gt; ({</span></span>
+<span class="line"><span style="color:#A6ACCD;">    count: 1,</span></span>
+<span class="line"><span style="color:#A6ACCD;">  }),</span></span>
+<span class="line"><span style="color:#A6ACCD;">  mutations: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    setCount(state, data) {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      state.count = data;</span></span>
+<span class="line"><span style="color:#A6ACCD;">    },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  actions: {</span></span>
+<span class="line"><span style="color:#A6ACCD;">    getuser() {</span></span>
+<span class="line"><span style="color:#A6ACCD;">      //do something</span></span>
+<span class="line"><span style="color:#A6ACCD;">    },</span></span>
+<span class="line"><span style="color:#A6ACCD;">  },</span></span>
+<span class="line"><span style="color:#A6ACCD;">}</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><p>此时如果我们再调用setCount或者getuser</p><div class="language-"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">vuexStore.commit(&#39;moduleA/setCount&#39;, 2)</span></span>
+<span class="line"><span style="color:#A6ACCD;">vuexStore.dispatch(&#39;moduleA/getuser&#39;)</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span></code></pre></div><h2 id="写在最后" tabindex="-1">写在最后 <a class="header-anchor" href="#写在最后" aria-hidden="true">#</a></h2><p>通过以上案例我们会发现Pinia比Vuex简洁许多，所以如果我们的项目是新项目的话建议使用Pinia。 当然如果我们的项目体量不是很大，我们其实没必要引入vue的状态管理库，盲目的使用反而会徒增心智负担。</p><p>如果感觉这篇文章对你有帮助的话请点个赞吧orz。</p><p>我正在参与掘金技术社区创作者签约计划招募活动，<a href="https://juejin.cn/post/7112770927082864653" title="https://juejin.cn/post/7112770927082864653" target="_blank" rel="noopener noreferrer">点击链接报名投稿</a>。</p></div></div></main><footer class="VPDocFooter" data-v-542b5b3a data-v-25535ebb><div class="edit-info" data-v-25535ebb><!----><!----></div><div class="prev-next" data-v-25535ebb><div class="pager" data-v-25535ebb><a class="pager-link prev" href="/articles/gulp%E7%9A%84%E4%BD%BF%E7%94%A8.html" data-v-25535ebb><span class="desc" data-v-25535ebb>Previous page</span><span class="title" data-v-25535ebb>gulp的使用</span></a></div><div class="has-prev pager" data-v-25535ebb><!----></div></div></footer><!--[--><!--]--></div></div></div></div></div><!----><!--[--><!--]--></div></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"articles_gulp的使用.md\":\"22dfdda3\",\"articles_pina和vuex.md\":\"87daa445\",\"articles_组件库环境搭建.md\":\"ca9e24c9\",\"guide_index.md\":\"030bf817\",\"guide_test.md\":\"64195b2f\",\"index.md\":\"2e7a63a5\"}")</script>
+    <script type="module" async src="/assets/app.b733c43a.js"></script>
+    
+  </body>
+</html>
