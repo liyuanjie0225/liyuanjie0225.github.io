@@ -1,30 +1,17 @@
 ---
-layout: home
-
-hero:
-  name: 个人博客
-  text: 随便写点啥.
-  tagline: 帅气又迷人的小月
-  image:
-    src: /logo.png
-    alt: Kitty
-  actions:
-    - theme: brand
-      text: 快来快来
-      link: /articles/组件库环境搭建
-    - theme: alt
-      text: View on Gitee
-      link: https://github.com/liyuanjie0225
-
+home: true
+# heroImage: /images/itclancoder.jpeg
+heroText: wish文档
+tagline: JFinal Vue
+actionText: 开始阅读 →
+actionLink: /doc/index
 features:
-  - icon: ⚡️
-    title: 这是一个闪电图标
-    details: wawawa
-  - icon: 🖖
-    title: 这是一个手掌图标
-    details: good...
-  - icon: 🛠️
-    title: 这是一个修理图标
-    details: cocococo
+  - title: Ant Design Vue
+    details:  Ant Design 的 Vue 实现，开发和服务于企业级后台产品
+  - title: JFinal
+    details: JFinal 是基于 Java 语言的极速 WEB + ORM + AOP + Template Engine 框架
+  - title: MySql
+    details: Nice!Nice!Nice!
+footer: MIT Licensed | Copyright © 2021-present 久伴轻尘
 ---
 
