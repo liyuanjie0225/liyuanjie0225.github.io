@@ -9,7 +9,7 @@ const docsLoader = require.resolve('./plugins/docsLoader.js')
 module.exports = {
   theme: 'vdoing',
   title: "组件库",
-  base: '/',
+  base: '/base',
   head,
   locales: {
     '/': {
