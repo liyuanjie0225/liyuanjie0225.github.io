@@ -1,6 +1,6 @@
 ---
 home: true
-title: 首页
+title: 首页1
 heroText: 组件库
 tagline: 🚀组件库
 bannerBg: none
